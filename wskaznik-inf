@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+    int i=13;
+    int *wsk; // deklaracja wskaźnika (zauważ gwiazdkę przed nazwą)
+    wsk = &i; // od tej chwili wskaźnik będzie wskazywał na adres, pod którym znajduje się zmienna i
+
+    cout<<"Wskaźnik typu integer wskazuje na 'i', ktorej wartoscia jest: "<< *wsk <<endl;
+    cout<<"Wartosc wskaznika: "<<wsk;
+    cin.ignore();
+    getchar();
+    return 0;
+}
