@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdio>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    int tab[4];
+    int *wsk;       //definicja wskaznika na zmienne typu integer
+    wsk=tab;        //wskaznik wskazuje na pierwszy element tablicy
+    srand(time(NULL));      //uruchomienie generatora liczb pseudolosowych
+    for (int i=0; i<4; i++)
+    {
+        *wsk=rand()%10;     //nadajemy wartosc elementowi, na który wskazuje
+        wsk++;              //wskaznik, i przesuwamy go na nastepny element
+    }
+cout<<"Kolejne elementy tablicy:"<<endl;
+
+}
