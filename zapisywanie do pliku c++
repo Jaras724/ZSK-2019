@@ -1,0 +1,41 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+   /* ofstream zapis("wyjscie.txt");
+    zapis<<3<<" "<<-20;
+    zapis.close();
+    return 0;
+    */
+  /*  int a=4;
+    float b=8.5;
+    ofstream wyj("ala.txt");        //(1) utworzenie obiektu wyjścia
+    wyj<<a<<endl<<b;                //(2) zapis do pliku
+    wyj.close();                        //zamknięcie pliku
+    wyj.open("ala.txt");                //ponowne otwarcie pliku
+    wyj.close();                            //ponowne zamknięcie pliku
+    wyj.open("zosia.txt");
+    wyj<<endl<<endl<<99;
+    wyj.close();
+    return 0;
+    */
+   /* char nazwa[50];         //tablica znaków z ograniczeniem do 50 znaków
+    cout<<"Podaj nazwe pliku jaki chcesz utworzyć";
+    cin>>nazwa;             //pobranie nazwy dla tworzonego pliku
+    ofstream wyniki(nazwa); //(1)utworzenie pliku
+    wyniki<<'s';             //do pliku wpiszemy literę s
+    wyniki.close();
+    return 0;
+    */
+    ofstream wyniki("out.txt");
+    if(!wyniki) //poczatek obslugi bledow
+    {
+        cout<<"pliku nie mozna otworzyc";
+        getchar(); //umożliwia ci przeczytanie komunikatu błędu
+        return 1;
+    }               // koniec obslugi bledow
+    wyniki.close();
+    return 0;
+}
