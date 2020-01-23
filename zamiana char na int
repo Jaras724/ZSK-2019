@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //zamiana char na int 0-9
+    char g;
+    int w;
+    cin>>g;
+    w=g-'0';
+    cout<<w;
+
+
+}
